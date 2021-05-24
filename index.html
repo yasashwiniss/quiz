@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz </title>
+    <link rel="stylesheet" href="C:\Users\kavya\Desktop\quiz\style.css">
+</head>
+<body>
+    <div class="home box ">
+        <h2> Instruction: </h2>
+        <p>Total no of questions: 5 </p>
+        <button type="button" class="butn" onclick="startQuiz()"> START QUIZ! </button>
+    </div>
+    <div class="quiz box hide" >
+        <div class="question-text"></div>
+        <div class="optn-container">
+           
+        </div>
+        
+        <div class="next-btn">
+            <button type="button" class="butn" onclick="next()"> NEXT </button>
+        </div>
+    </div>
+         <div class="result box hide">
+              <h1>Quiz Results</h1>
+            <table>
+              <tr>
+                  <td>total questions</td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td>Attempts</td>
+                  <td><span class="tot-attemt"></span></td>
+              </tr>
+              <tr>
+                  <td>Correct</td>
+                  <td><span class="tot-correct"></span></td>
+              </tr>
+              <tr>
+              <td>Wrong</td>
+              <td><span class="tot-wrong"></span></td>
+              </tr>
+              <tr>
+                <td>Total Score</td>
+                <td><span class="tot-score"></span></td>
+                </tr>
+            </table>
+              <button type="button" class="butn" onclick="tryagainquiz()"> Try Again </button>
+              <button type="button" class="butn" onclick="gotohome()"> Go To Home </button>
+        </div>
+    <script src="C:\Users\kavya\Desktop\quiz\question.js"></script>
+    <script src="C:\Users\kavya\Desktop\quiz\main.js"></script>
+    
+</body>
+</html>
